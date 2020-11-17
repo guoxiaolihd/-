@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>钟表</title>
+	<script>
+			window.onload=function(){
+				let box=document.querySelector('.box')
+				let body=document.querySelector('body')
+				let arrs=["image/0.JPG","image/1.JPG","image/2.JPG","image/3.JPG",
+						"image/4.JPG","image/5.JPG","image/6.JPG","image/7.JPG",
+						"image/8.JPG","image/9.JPG"]
+				setInterval(function(){
+					function toTwo ( n ) {   return n < 10 ?  '0' + n : '' + n; } 
+					let myTime=new Date()
+					let t=myTime.toLocaleString()
+					box.firstElementChild.innerText='时间：'+t.substr(0,10)
+					let hour=toTwo(myTime.getHours())
+					let time=hour+t.slice(-6)
+					for(let i=0;i<time.length;i++){
+						//不是数字返回true
+						if(isNaN(time.charAt(i))){
+							box.children[i+1].src="image/colon.JPG"
+							
+						}
+						else{
+							box.children[i+1].src=arrs[time.charAt(i)]
+						}
+					}
+				},1000)
+			}
+		</script>
+		<style>
+			*{margin: 0; padding: 0;}
+			.box{
+				width: 600px;
+				height: 250px;
+				margin: 120px auto;
+			}
+			div{
+				margin-left: 50px;
+			}
+			img{
+				width: 70px;
+				height: 100px;
+				margin-top: 20px;
+			}
+			p{
+				font-size: 25px;
+				margin-top: 30px;
+			}
+		</style>
+</head>
+<body>
+	<div class="box">
+			<p>时间：</p>
+			<img src="" alt="" />
+			<img src="" alt="" />
+			<img src="" alt="" />
+			<img src="" alt="" />
+			<img src="" alt="" />
+			<img src="" alt="" />
+			<img src="" alt="" />
+			<img src="" alt="" />
+	</div>
+</body>
+</html>
