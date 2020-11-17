@@ -1,0 +1,144 @@
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+a{
+	color: #777777;
+}
+span{
+	color: #9c9c9c;
+}
+.box{
+	width: 580px;
+	margin: 20px auto;
+	background: #f4f4f4;
+	box-shadow: 5px 5px 20px 5px burlywood;
+}
+.header{
+	font-size: 20px;
+}
+.top{
+	background: #06c1ae;
+	padding-top:50px ;
+	padding-bottom: 13px;
+}
+.top span{
+	font-size: 24px;
+	color: #fff;
+}
+.top>span:first-child{
+	padding:0 30px 0;
+}
+form,img,.top>span:first-child{
+	display: inline-block;
+	vertical-align: top;
+}
+input{
+	width: 295px;
+	height: 50px;
+	background: #07aa95;
+	border-radius: 25px;
+	border: none;
+}
+form{
+	width: 360px;
+	position: relative;
+}
+form span{
+	position: relative;
+	right:45px;
+}
+.header,.content,.footer,.menu{
+	background: #fff;
+}
+.flex{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.header ul{
+	padding-bottom: 25px;
+}
+.header ul li{
+	width:130px ;
+	height: 110px;
+	margin-top: 25px;
+	text-align: center;
+}
+.header ul img{
+	display: block;
+	margin: 0 auto;
+}
+/*中间部分*/
+.content{
+	margin:20px 0 20px 0;
+	border: solid 1px #EEEEEE;
+}
+.content>div{
+	padding-bottom: 15px;
+	padding-top: 17px;
+	width: 286px;
+	font-size: 12px;	
+}
+.one{
+	border-right: solid 1px #EEEEEE;
+}
+b{
+	font-size: 28px;
+}
+.one b{
+	color:#e38e33 ;
+}
+.two b{
+	color: #d76f86;
+}
+.content>div>div,.footer>div>div{
+	margin-left: 15px;
+	display: inline-block;
+	vertical-align: top;
+}
+/*最下面*/
+.footer h3{
+	padding: 15px;
+	border-right: solid 1px #EEEEEE;
+}
+.f1,.f2{
+	width: 550px;
+	padding: 15px;
+}
+.f1 span,.f2 span{
+	display: inline-block;
+	margin-top: 20px;
+}
+big{
+	color: #3dbba3;
+}
+.footer .sign span:nth-last-child(2){
+	border: solid 1px #d18732;
+	color: #d18732;
+}
+.footer .sign span:last-child{
+	margin-left: 140px;
+}
+/*菜单栏*/
+.menu{
+	margin-top: 20px;
+	height:70px;
+	border: solid 2px #EEEEEE;
+	transition:all 2s;
+}
+.menu ul li{
+	width: 130px;
+	text-align: center;
+}
+.menu a img{
+	margin: 0 auto;
+	display: block;
+}
+.menu:hover{
+	height: 120px;
+
+}
